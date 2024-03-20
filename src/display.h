@@ -5,7 +5,9 @@
 // #include <SDL2/SDL_pixels.h>
 // #include <SDL2/SDL_render.h>
 // #include <SDL2/SDL_video.h>
+#include "vector.h"
 #include <stdbool.h>
+#include <stdint.h>
 
 extern SDL_Window *window;
 extern SDL_Renderer *renderer;
@@ -22,4 +24,5 @@ void draw_rect(int x, int y, int width, int height, uint32_t color);
 void render_color_buffer(void);
 void clear_color_buffer(uint32_t color);
 void destroy_window(void);
+void draw_pixel(int x, int y, uint32_t color);
 #endif // !DISPLAY_H
